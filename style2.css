@@ -1,0 +1,117 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 100px auto;
+}
+
+.left {
+  padding: 20% 0 20%;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 5%;
+}
+
+.right {
+  margin-top: 0.4rem;
+  font-size: 10px;
+  text-align: center;
+}
+
+.header {
+  background-color: hsl(248, 32%, 49%);
+  padding: 12px 84px;
+  border-radius: 9px;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px;
+}
+
+form {
+  background-color: #fff;
+  margin: 0 10px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+input,
+.button {
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 2rem;
+  font-size: 15px;
+  padding: 0.4rem 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.terms_2 {
+  color: hsl(0, 100%, 74%);
+  margin-top: 4px;
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 50px auto 50px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .left {
+    padding: 20% 0 5%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 40%;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .left {
+    padding: 20% 0 5%;
+    text-align: center;
+  }
+}
